@@ -25,14 +25,11 @@ _io = [
 	("clk100", 0, Pins("V10"), IOStandard("LVCMOS33")),
 
 	("flash_rst_n", 0, Pins("T4"), IOStandard("LVCMOS33")),
+	("flash_clk", 0, Pins("R10"), IOStandard("LVCMOS33")),
 
 	("flash", 0,
-		Subsignal("adr", Pins("F15", "F16", "C17", "C18", "F14", "G14", "D17",
-			"D18", "H12", "G13", "E16", "E18", "K12", "K13", "F17",
-			"F18", "H13", "H14", "H15", "H16", "G16", "G18", "J16", "J18",
-			"K17", "K18")),
-		Subsignal("d", Pins("T8", "R8", "U10", "V13", "U13", "P12", "P6", "N5",
-			"R5", "T3", "R3", "V5", "U5", "V14", "T14", "R13")),
+		Subsignal("adr", Pins("K18", "K17", "J18", "J16", "G18", "G16", "H16", "H15", "H14", "H13", "F18", "F17", "K13", "K12", "E18", "E16", "G13", "H12", "D18", "D17", "G14", "F14", "C18", "C17", "F16", "F15")),
+		Subsignal("d", Pins("R13", "T14", "V14", "U5", "V5", "R3", "T3", "R5", "N5", "P6", "P12", "U13", "V13", "U10", "R8", "T8")),
 		Subsignal("oe_n", Pins("L18")),
 		Subsignal("we_n", Pins("M16")),
 		Subsignal("ce_n", Pins("L17")),
